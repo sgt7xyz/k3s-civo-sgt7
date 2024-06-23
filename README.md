@@ -1,6 +1,8 @@
-# Kubernetes (K3s) in the Civo cloud (k3s-civo-sgt7)
-
 ![Kubernetes Logo](img/k8s.png)
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/></a><br/>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+
+# Kubernetes (K3s) in the Civo cloud (k3s-civo-sgt7)
 
 This repository contains Terraform configurations for setting up a Kubernetes cluster on Civo's K3s platform. It enables you to spin up a simple k3s cluster in the Civo cloud. It is great for courses such as Nigel Poulton's "Quick Start Kubernetes". If you don't have a copy of the book, you can purchase one from [Leanpub](https://leanpub.com/quickstartkubernetes). I highly recommend it!
 
