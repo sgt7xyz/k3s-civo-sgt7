@@ -1,13 +1,5 @@
 # Terraform variables for the Civo provider.
 
-# This is the Civo API token. You can get this from the Civo dashboard. While there are better methods
-# to managing secrets, this is a simple way to get started. Store it in a terrafom.tfvars file and ensure
-# this file is included in your .gitignore file.
-variable "civo_token" {
-  description = "Civo API token."
-  type        = string
-}
-
 variable "region" {
   type        = string
   description = "The region for your cluster."
