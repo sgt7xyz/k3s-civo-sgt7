@@ -17,10 +17,11 @@ The repository consists of three main Terraform files:
 ## Prerequisites
 
 - [Terraform](https://www.terraform.io/downloads.html): You will need Terraform installed on your local machine to use these configurations.
-- terraform.tfvars file in the Terraform directory that contains your civo token. For example:
+- An active API Key in your Civo Cloud.
+- There are numerous ways to configure authentication for the [Civo Terraform Provider](https://registry.terraform.io/providers/civo/civo/latest/docs) for this lab environment, but I simply store the API key in a variable e.g.
 
-```txt
-  civo_token = "Your Civo Token"
+```bash
+  export CIVO_TOKEN=<your token>
 ```
 
 ## Usage
