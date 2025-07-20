@@ -32,7 +32,7 @@ variable "name" {
 variable "kubernetes_version" {
   type        = string
   description = "The version of Kubernetes to use."
-  default     = "v1.30.5-k3s1"
+  default     = "v1.31.6-k3s1"
 }
 
 variable "label" {
