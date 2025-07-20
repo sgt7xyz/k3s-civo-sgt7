@@ -1,5 +1,5 @@
-# Query small instance size
-data "civo_size" "small" {
+# Query xsmall instance size
+data "civo_size" "xsmall" {
   filter {
     key    = "type"
     values = ["kubernetes"]
@@ -21,7 +21,7 @@ resource "civo_kubernetes_cluster" "my_cluster" {
   firewall_id        = civo_firewall.k3s_firewall.id
   pools {
     label      = var.label
-    size      = element(data.civo_size.small.sizes, 1).name
+    size       = element(data.civo_size.xsmall.sizes, 0).name
     node_count = 3
   }
 }

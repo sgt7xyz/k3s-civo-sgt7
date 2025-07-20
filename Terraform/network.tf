@@ -1,5 +1,7 @@
 resource "civo_network" "ks3_net" {
-  label = "k3s-network"
+  label   = "k3s-network"
+  region  = var.region
+  cidr_v4 = "10.0.0.0/24"
 }
 
 # Create a firewall with the default rules
@@ -25,7 +27,7 @@ resource "civo_firewall" "k3s_firewall" {
     action     = "allow"
   }
 
-# You should make this more secure by restricting outbound traffic to only the necessary ports. But this is pretty open for simplicity.
+  # You should make this more secure by restricting outbound traffic to only the necessary ports. But this is pretty open for simplicity.
   egress_rule {
     label      = "all"
     protocol   = "tcp"
